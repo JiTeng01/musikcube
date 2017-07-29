@@ -90,7 +90,7 @@ add_subdirectory(src/musikcube)
 add_subdirectory(src/plugins/taglib_plugin)
 add_subdirectory(src/plugins/m4adecoder)
 add_subdirectory(src/plugins/oggdecoder)
-add_subdirectory(src/plugins/nomaddecoder)
+add_subdirectory(src/plugins/mpg123decoder)
 add_subdirectory(src/plugins/flacdecoder)
 add_subdirectory(src/plugins/nullout)
 add_subdirectory(src/plugins/websocket_remote)
@@ -125,7 +125,7 @@ if (CMAKE_SYSTEM_NAME MATCHES "Linux")
       bin/plugins/libnullout.so
       bin/plugins/libflacdecoder.so
       bin/plugins/libm4adecoder.so
-      bin/plugins/libnomaddecoder.so
+      bin/plugins/libmpg123decoder.so
       bin/plugins/liboggdecoder.so
       bin/plugins/libtaglibreader.so
       bin/plugins/libwebsocket_remote.so
@@ -140,7 +140,7 @@ else (CMAKE_SYSTEM_NAME MATCHES "Linux")
       bin/plugins/libnullout.dylib
       bin/plugins/libflacdecoder.dylib
       bin/plugins/libm4adecoder.dylib
-      bin/plugins/libnomaddecoder.dylib
+      bin/plugins/libmpg123decoder.dylib
       bin/plugins/liboggdecoder.dylib
       bin/plugins/libtaglibreader.dylib
       bin/plugins/libwebsocket_remote.dylib
